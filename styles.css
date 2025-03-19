@@ -46,6 +46,10 @@ nav ul li a:hover {
 
 main {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .page {
@@ -79,4 +83,42 @@ main {
 
 .link-buttons button:hover {
     background-color: #0056b3;
+}
+
+/* Стили для логотипа */
+.logo {
+    font-size: 72px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    animation: bounce 2s infinite;
+}
+
+/* Анимация подпрыгивания */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+/* Стили для контента на главной странице */
+.home-content {
+    margin-top: 20px;
+    max-width: 600px;
+}
+
+.home-content h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.home-content p {
+    font-size: 18px;
+    color: #ccc;
 }
