@@ -76,7 +76,7 @@ main {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 8px;
     font-size: 16px;
     text-align: left;
 }
@@ -121,4 +121,237 @@ main {
 .home-content p {
     font-size: 18px;
     color: #ccc;
+}
+
+.donate-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.donate-card {
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.card-header {
+    height: 10px;
+}
+
+.player-plus .card-header {
+    background-color: #4CAF50; /* Green */
+}
+
+.premium .card-header {
+    background-color: #FF9800; /* Orange */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.donate-card h3 {
+    margin-top: 0;
+    color: #fff;
+    font-size: 24px;
+}
+
+.donate-card ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    text-align: left;
+}
+
+.donate-card ul li {
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.donate-card ul li i {
+    margin-right: 10px;
+    color: #4CAF50;
+}
+
+.buy-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    width: 100%;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buy-button:hover {
+    background-color: #0056b3;
+}
+
+
+.site-footer {
+    background-color: #333;
+    color: #e0e0e0;
+    padding: 30px 0 0;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin-bottom: 20px;
+    padding: 0 15px;
+}
+
+.footer-section h3 {
+    color: #007bff;
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.footer-contacts li, .footer-links li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.footer-contacts i, .social-links i {
+    margin-right: 10px;
+    width: 20px;
+    text-align: center;
+}
+
+.footer-links a, .footer-contacts a {
+    color: #e0e0e0;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover, .footer-contacts a:hover {
+    color: #007bff;
+}
+
+.social-links a {
+    display: inline-block;
+    color: #e0e0e0;
+    font-size: 20px;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #007bff;
+}
+
+.footer-bottom {
+    background-color: #222;
+    padding: 15px 0;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 5px 0;
+    font-size: 14px;
+}
+
+@media (max-width: 768px) {
+    .footer-section {
+        flex: 100%;
+        text-align: center;
+    }
+    
+    .social-links {
+        justify-content: center;
+    }
+}
+
+.profile-simple {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #2a2a2a;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.profile-placeholder {
+    padding: 20px;
+}
+
+.profile-avatar-placeholder {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 15px;
+    background-color: #333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    color: #007bff;
+    border: 3px solid #007bff;
+}
+
+.profile-placeholder h3 {
+    margin: 10px 0;
+    color: #e0e0e0;
+}
+
+.profile-placeholder p {
+    margin: 8px 0;
+    color: #aaa;
+}
+
+.profile-placeholder span {
+    color: #e0e0e0;
+}
+
+.player-status {
+    color: #4CAF50;
+}
+
+.profile-buttons {
+    margin-top: 20px;
+}
+
+.profile-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.profile-btn:hover {
+    background-color: #0056b3;
+}
+
+.profile-btn:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+}
+
+.profile-btn i {
+    margin-right: 8px;
 }
