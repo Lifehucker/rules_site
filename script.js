@@ -1,6 +1,13 @@
 document.addEventListener('DOMContentLoaded', function () {
     const pages = document.querySelectorAll('.page');
-    const links = document.querySelectorAll('nav a');
+    const links = document.querySelectorAll('nav a, .footer-links a');
+    const loginBtn = document.querySelector('.profile-btn:not(:disabled)');
+    
+    if (loginBtn) {
+        loginBtn.addEventListener('click', function() {
+            alert('Тут пока ничего нет');
+        });
+    }
 
     function switchPage(event) {
         event.preventDefault();
@@ -19,9 +26,15 @@ document.addEventListener('DOMContentLoaded', function () {
                 }, 500);
             }
         });
+
+
+        window.scrollTo(0, 0);
     }
 
     links.forEach(link => {
         link.addEventListener('click', switchPage);
     });
 });
+
+
+
