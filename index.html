@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Origin GMod Server</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header>
@@ -13,7 +14,9 @@
             <ul>
                 <li><a href="#" data-page="home">Главная</a></li>
                 <li><a href="#" data-page="rules">Правила</a></li>
+                <li><a href="#" data-page="donate">Донат</a></li>
                 <li><a href="#" data-page="links">Ссылки</a></li>
+                <li><a href="#" data-page="profile">Профиль</a></li> <!-- Добавленная кнопка -->
             </ul>
         </nav>
     </header>
@@ -38,6 +41,38 @@
             </ul>
         </section>
 
+        <section id="donate" class="page">
+            <h2>Донат привилегии</h2>
+            <div class="donate-cards">
+                <div class="donate-card player-plus">
+                    <div class="card-header"></div>
+                    <div class="card-body">
+                        <h3>Игрок+</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Повышенный лимит пропов</li>
+                            <li><i class="fas fa-check"></i> Доступ к !rtv и !ragdoll</li>
+                            <li><i class="fas fa-check"></i> Доступ к Starfall</li>
+                        </ul>
+                        <button class="buy-button">Купить за 99₽</button>
+                    </div>
+                </div>
+                
+                <div class="donate-card premium">
+                    <div class="card-header"></div>
+                    <div class="card-body">
+                        <h3>Премиум</h3>
+                        <ul>
+                            <li><i class="fas fa-check"></i> Все преимущества Игрок+</li>
+                            <li><i class="fas fa-check"></i> Доступ к !goto</li>
+                            <li><i class="fas fa-check"></i> Доступ к Starfall и e2p</li>
+                            <li><i class="fas fa-check"></i> Повышенный лимит пропов</li>
+                        </ul>
+                        <button class="buy-button">Купить за 199₽</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="links" class="page">
             <h2>Ссылки</h2>
             <div class="link-buttons">
@@ -45,7 +80,69 @@
                 <button onclick="window.open('https://discord.gg/cPMr8jbKJN', '_blank')">Дискорд</button>
             </div>
         </section>
+
+        <section id="profile" class="page">
+            <div class="profile-simple">
+                <div class="profile-placeholder">
+                    <div class="profile-avatar-placeholder">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <h3>Игрок</h3>
+                    <p>SteamID: <span>STEAM_0:0:123456</span></p>
+                    <p>Статус: <span class="player-status">Обычный</span></p>
+                    <div class="profile-buttons">
+                        <button class="profile-btn">
+                            <i class="fas fa-sign-in-alt"></i> Войти через Steam
+                        </button>
+                        <button class="profile-btn" disabled>
+                            <i class="fas fa-cog"></i> Настройки (недоступно)
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h3>Origin GMod</h3>
+                <p>Сервер Garry's Mod с уникальным геймплеем и дружелюбным комьюнити.</p>
+            </div>
+            
+            <div class="footer-section">
+
+
+<h3>Контакты</h3>
+                <ul class="footer-contacts">
+                    <li><i class="fas fa-envelope"></i> Email: origin@gmodserver.com</li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Навигация</h3>
+                <ul class="footer-links">
+                    <li><a href="#" data-page="home">Главная</a></li>
+                    <li><a href="#" data-page="rules">Правила</a></li>
+                    <li><a href="#" data-page="donate">Донат</a></li>
+                    <li><a href="#" data-page="links">Ссылки</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Соцсети</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-steam"></i></a>
+                    <a href="#"><i class="fab fa-discord"></i></a>
+
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2023 Origin GMod Server. Все права защищены.</p>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
